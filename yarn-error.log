@@ -1,0 +1,62 @@
+Arguments: 
+  /Users/Ely/SDK/node-v6.10.2-darwin-x64/bin/node /usr/local/Cellar/yarn/1.2.1/libexec/bin/yarn.js
+
+PATH: 
+  /bin:/Users/Ely/SDK/spark-1.6.0-bin-hadoop2.6/bin:/Users/Ely/SDK/apache-hive-1.2.1-bin/bin:/Users/Ely/SDK/phantomjs-2.0.0-macosx/bin:/Users/Ely/SDK/kafka_2.11-0.8.2.1/bin:/Users/Ely/SDK/apache-storm-0.10.0/bin:/Users/Ely/SDK/zookeeper-3.4.6/bin:/Users/Ely/SDK/vert.x-3.2.0-full/bin:/Users/Ely/SDK/redis-3.0.6/src:/Users/Ely/SDK/mongodb-osx-x86_64-3.2.0/bin:/Users/Ely/SDK/node-v6.10.2-darwin-x64/bin:/Users/Ely/SDK/apache-ant-1.9.6/bin:/Users/Ely/SDK/grails-2.3.11/bin:/Users/Ely/SDK/gradle-2.10/bin:/Users/Ely/SDK/sbt/bin:/Users/Ely/SDK/activator-dist-1.3.7:/Users/Ely/SDK/scala-2.11.7/bin:/Users/Ely/SDK/groovy-2.3.0/bin:/Users/Ely/SDK/apache-maven-3.3.9/bin:/Users/Ely/SDK/jad:/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.2.1
+
+Node version: 
+  6.10.2
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "private": true,
+    "scripts": {
+      "start": "roadhog server",
+      "build": "roadhog build",
+      "lint": "eslint --ext .js src test",
+      "precommit": "npm run lint"
+    },
+    "engines": {
+      "install-node": "6.11.1"
+    },
+    "dependencies": {
+      "babel-runtime": "^6.9.2",
+      "dva": "^2.0.4",
+      "antd-mobile": "^2.0.1",
+      "react": "^16.0.0",
+      "react-dom": "^16.0.0"
+    },
+    "devDependencies": {
+      "babel-eslint": "^7.1.1",
+      "babel-plugin-dva-hmr": "^0.3.2",
+      "babel-plugin-transform-runtime": "^6.9.0",
+      "eslint": "^3.12.2",
+      "eslint-config-airbnb": "^13.0.0",
+      "eslint-plugin-import": "^2.2.0",
+      "eslint-plugin-jsx-a11y": "^2.2.3",
+      "eslint-plugin-react": "^6.8.0",
+      "expect": "^1.20.2",
+      "husky": "^0.12.0",
+      "redbox-react": "^1.4.3",
+      "roadhog": "^1.2.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: https://registry.yarnpkg.com/babel-runtime: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/Cellar/yarn/1.2.1/libexec/lib/cli.js:123675:19)
+      at ontimeout (timers.js:380:14)
+      at tryOnTimeout (timers.js:244:5)
+      at Timer.listOnTimeout (timers.js:214:5)
